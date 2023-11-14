@@ -1,0 +1,80 @@
+[
+  {
+    "scriptonit" : [
+      {
+        "name": "Slow Mo (Highself Remix)",
+        "authors": "Armich, Скриптонит",
+        "album": "2004",
+        "imgSource": "https://t2.genius.com/unsafe/340x340/https%3A%2F%2Fimages.genius.com%2F4983f655e8811fb2c5d1b941870e2c87.1000x1000x1.jpg",
+        "audioSource": "https://lmusic.kz/files/mp3s/2023-04/Armich%2C%20%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%BD%D0%B8%D1%82%20-%20Slow%20Mo%20%28Highself%20Remix%29.mp3"
+      },
+      {
+        "name": "Привычка",
+        "authors": "Скриптонит feat. Andy Panda, 104",
+        "album": "2004",
+        "imgSource": "https://lmusic.kz/images/album_cover/2004.jpg",
+        "audioSource": "https://lmusic.kz/files/download/%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%BD%D0%B8%D1%82%20feat.%20Andy%20Panda%2C%20104%20-%20%D0%9F%D1%80%D0%B8%D0%B2%D1%8B%D1%87%D0%BA%D0%B0.mp3"
+      },
+      {
+        "name": "Сердца из железа",
+        "authors": "Скриптонит",
+        "album": "2004",
+        "imgSource": "https://lmusic.kz/images/album_cover/2004.jpg",
+        "audioSource": "https://lmusic.kz/files/download/%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%BD%D0%B8%D1%82%20-%20%D0%A1%D0%B5%D1%80%D0%B4%D1%86%D0%B0%20%D0%B8%D0%B7%20%D0%B6%D0%B5%D0%BB%D0%B5%D0%B7%D0%B0.mp3"
+      },
+      {
+        "name": "Выходные",
+        "authors": "Скриптонит",
+        "album": "2004",
+        "imgSource": "https://lmusic.kz/images/album_cover/2004.jpg",
+        "audioSource": "https://lmusic.kz/files/download/%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%BD%D0%B8%D1%82%20-%20%D0%92%D1%8B%D1%85%D0%BE%D0%B4%D0%BD%D1%8B%D0%B5.mp3"
+      }
+    ],
+    "teddySwims": [
+      {
+        "name": "The Door",
+        "authors": "Teddy Swims",
+        "album": "none",
+        "imgSource": "https://lmusic.kz/images/cover/teddy-swims-the-door.jpeg",
+        "audioSource": "https://lmusic.kz/files/mp3s/2023-09/Teddy%20Swims%20-%20The%20Door.mp3"
+      },
+      {
+        "name": "Happy People",
+        "authors": "X Ambassadors feat. Teddy Swims & Jac Ross",
+        "album": "none",
+        "imgSource": "https://lmusic.kz/images/cover/x-ambassadors-feat-teddy-swims-jac-ross-happy-people.jpeg",
+        "audioSource": "https://lmusic.kz/files/mp3s/2023-05/X%20Ambassadors%20feat.%20Teddy%20Swims%20%26%20Jac%20Ross%20-%20Happy%20People.mp3"
+      },
+      {
+        "name": "Easy To Love",
+        "authors": "Teddy Swims & Armin Van Buuren & Matoma",
+        "album": "none",
+        "imgSource": "https://lmusic.kz/images/cover/armin-van-buuren-matoma-feat-teddy-swims-easy-to-love.jpeg",
+        "audioSource": "https://lmusic.kz/files/mp3s/2023-01/Armin%20Van%20Buuren%20%26%20Matoma%20feat.%20Teddy%20Swims%20-%20Easy%20To%20Love.mp3"
+      }
+    ],
+    "rickAstley": [
+      {
+        "name": "Never Gonna Give You Up",
+        "authors": "Rick Astley",
+        "album": "Are We There Yet?",
+        "imgSource": "https://lmusic.kz/images/artist_cover/rick-astley.jpg",
+        "audioSource": "https://lmusic.kz/files/download/Rick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up.mp3"
+      },
+      {
+        "name": "Golden Hour",
+        "authors": "Rick Astley",
+        "album": "Are We There Yet?",
+        "imgSource": "https://lmusic.kz/images/album_cover/are-we-there-yet.jpeg",
+        "audioSource": "https://lmusic.kz/files/mp3s/2023-10/Rick%20Astley%20-%20Golden%20Hour.mp3"
+      },
+      {
+        "name": "Blue Sky",
+        "authors": "Rick Astley",
+        "album": "Are We There Yet?",
+        "imgSource": "https://lmusic.kz/images/album_cover/are-we-there-yet.jpeg",
+        "audioSource": "https://lmusic.kz/files/mp3s/2023-10/Rick%20Astley%20-%20Blue%20Sky.mp3"
+      }
+    ]
+  }
+]
