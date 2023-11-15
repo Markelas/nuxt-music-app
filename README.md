@@ -2,6 +2,7 @@
 
 ## Приложение для прослушивания музыки на Nuxt js, Pinia, SCSS, Vuetify, Swiper
 ## Приложение доступно по ссылке [nuxt-mark-music-app](https://nuxt-mark-music-app.vercel.app/)
+![image](https://github.com/Markelas/nuxt-music-app/assets/95120171/4380f016-7727-48ef-be3e-5f2b43f31e4c)
 
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
