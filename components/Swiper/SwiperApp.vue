@@ -4,6 +4,7 @@
       :spaceBetween="20"
       :freeMode="true"
       :modules="modules"
+      :breakpoints="swiperOptions.breakpoints"
       class="mySwiper"
   >
     <swiper-slide
@@ -51,7 +52,27 @@ import { FreeMode } from 'swiper/modules';
 
 export default {
   data: () => ({
-    isWidthOK:false
+    swiperOptions: {
+      breakpoints: {
+        1: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        450: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        730: {
+          slidesPerView: 3,
+          spaceBetween: 50
+        },
+
+        900: {
+          slidesPerView: 4,
+          spaceBetween: 30
+        }
+      }
+    }
   }),
   components: {
     Swiper,

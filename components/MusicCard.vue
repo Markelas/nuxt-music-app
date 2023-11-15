@@ -4,7 +4,14 @@
       theme="dark"
       class="card__box"
   >
-    <div class="d-flex flex-no-wrap justify-space-between" v-if="musicStore.activeMusic">
+    <v-avatar
+        class="active__music__card--small-img"
+        size="125"
+        rounded="0"
+    >
+      <v-img :src="activeMusicImg"></v-img>
+    </v-avatar>
+    <div class="active__music__card d-flex flex-no-wrap justify-space-between" v-if="musicStore.activeMusic">
       <div>
         <v-card-title class="text-h5">
           {{musicStore.activeMusic.name}}
@@ -21,7 +28,7 @@
       </div>
 
       <v-avatar
-          class="ma-3"
+          class="ma-3 active__music__card--big-img"
           size="125"
           rounded="0"
       >
@@ -61,6 +68,9 @@ let hackHtml = ""; //Хакаем vue, чтобы компонент перер�
 </script>
 
 <style scoped>
+.active__music__card--small-img{
+  display: none;
+}
 .disabled{
   cursor: default;
   color: rgba(121, 119, 119, 0.98);
@@ -75,5 +85,22 @@ let hackHtml = ""; //Хакаем vue, чтобы компонент перер�
   display: flex;
   align-items: center;
   padding: 40px;
+}
+@media (max-width: 670px) {
+  .active__music__card{
+    display: flex !important;
+    align-items: center;
+    flex-direction: column;
+  }
+  .active__music__card--small-img{
+    display: block;
+    margin: 0 auto;
+  }
+  .active__music__card--big-img{
+    display: none;
+  }
+  .v-card{
+    max-width: 450px;
+  }
 }
 </style>
