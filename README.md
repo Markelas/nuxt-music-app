@@ -1,4 +1,8 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 music app
+
+## Приложение для прослушивания музыки на Nuxt js, Pinia, SCSS, Vuetify, Swiper
+## Приложение доступно по ссылке [nuxt-mark-music-app](https://nuxt-mark-music-app.vercel.app/)
+
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
