@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import {resolve} from "path";
+import { defineNuxtModule } from 'nuxt'
 export default defineNuxtConfig({
   app: {
     head: {
@@ -21,7 +22,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/main.css"],
-  modules: ['@pinia/nuxt', '@nuxt/content', 'vuetify-nuxt-module'],
+  modules: ['@pinia/nuxt', '@nuxt/content', 'vuetify-nuxt-module', 'nuxt-swiper'],
   build:{
     transpile: ['vuetify'],
   },

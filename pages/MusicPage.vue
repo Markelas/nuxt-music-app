@@ -2,7 +2,7 @@
 import {useCounterStore} from "~/stores/store.js";
 const store = useCounterStore();
 
-const {data: musics, pending} = await $fetch('/api/music')
+const {data: musics} = await $fetch('/api/music')
 console.log(musics)
 
 </script>

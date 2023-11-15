@@ -37,7 +37,7 @@ html {
 }
 
 body {
-  background: rgb(5, 0, 68);
+  background-color: rgb(11, 6, 82);
   position: relative;
   overflow: hidden;
 }
