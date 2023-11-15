@@ -7,7 +7,7 @@ const {data: musics} = await $fetch('/api/music')
 <template>
   <div>
     <div>
-      <div style="margin-top: 150px">
+      <div style="margin-top: 120px">
         <MusicCard :musics="musics"/>
       </div>
       <div>
