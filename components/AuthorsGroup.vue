@@ -46,13 +46,7 @@ export default {
     musics: Object
   }
 }
-// const a = props.musics
-// const albumsItems = computed(()=> {
-//   return a.filter((e)=> {
-//     console.log(e)
-//     return e
-//   })
-// })
+
 </script>
 
 

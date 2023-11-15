@@ -1,6 +1,6 @@
 <template>
   <swiper
-      :slidesPerView="3"
+      :slidesPerView="5"
       :spaceBetween="30"
       :pagination="{
       clickable: true,
@@ -26,6 +26,7 @@
                 class="ms-2"
                 icon="mdi-play"
                 variant="text"
+                @click="musicStore.changeAlbum(item)"
             ></v-btn>
           </v-card-actions>
         </div>
@@ -43,6 +44,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import '~/components/Swiper/swiperStyle.css';
+import {useMusicStore} from "~/stores/store.js";
 
 // import required modules
 import { Pagination } from 'swiper/modules';
@@ -57,7 +59,9 @@ export default {
     musics: Object
   },
   setup() {
+    const musicStore =useMusicStore()
     return {
+      musicStore,
       modules: [Pagination,Navigation],
     };
   },
@@ -69,14 +73,16 @@ export default {
 .mySwiper{
   display: flex;
   justify-content: space-around;
+  margin:40px 0;
 }
 .cards__group__avatar{
-  width:300px;
+  margin: 10px;
+  width: 200px;
 }
 .cards__group__item{
-  background-color: #952175;
+  background-color: rgba(149,33,117, 0.8);
   cursor: pointer;
-  max-width: 300px
+  max-width: 70%;
 }
 .item__title{
   color: white;

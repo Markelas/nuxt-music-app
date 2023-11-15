@@ -6,7 +6,7 @@
         "authors": "Armich, Скриптонит",
         "album": "2004",
         "imgSource": "https://t2.genius.com/unsafe/340x340/https%3A%2F%2Fimages.genius.com%2F4983f655e8811fb2c5d1b941870e2c87.1000x1000x1.jpg",
-        "audioSource": "https://lmusic.kz/files/mp3s/2023-04/Armich%2C%20%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%BD%D0%B8%D1%82%20-%20Slow%20Mo%20%28Highself%20Remix%29.mp3"
+        "audioSource": "https://lmusic.kz/files/mp3s/2022-12/Armich%20feat.%20%D0%A1%D0%BA%D1%80%D0%B8%D0%BF%D1%82%D0%BE%D0%BD%D0%B8%D1%82%20-%20Slow%20Mo.mp3"
       },
       {
         "name": "Привычка",
@@ -51,6 +51,29 @@
         "album": "none",
         "imgSource": "https://lmusic.kz/images/cover/armin-van-buuren-matoma-feat-teddy-swims-easy-to-love.jpeg",
         "audioSource": "https://lmusic.kz/files/mp3s/2023-01/Armin%20Van%20Buuren%20%26%20Matoma%20feat.%20Teddy%20Swims%20-%20Easy%20To%20Love.mp3"
+      }
+    ],
+    "rickAstley": [
+      {
+        "name": "Never Gonna Give You Up",
+        "authors": "Rick Astley",
+        "album": "Are We There Yet?",
+        "imgSource": "https://lmusic.kz/images/artist_cover/rick-astley.jpg",
+        "audioSource": "https://lmusic.kz/files/download/Rick%20Astley%20-%20Never%20Gonna%20Give%20You%20Up.mp3"
+      },
+      {
+        "name": "Golden Hour",
+        "authors": "Rick Astley",
+        "album": "Are We There Yet?",
+        "imgSource": "https://lmusic.kz/images/album_cover/are-we-there-yet.jpeg",
+        "audioSource": "https://lmusic.kz/files/mp3s/2023-10/Rick%20Astley%20-%20Golden%20Hour.mp3"
+      },
+      {
+        "name": "Blue Sky",
+        "authors": "Rick Astley",
+        "album": "Are We There Yet?",
+        "imgSource": "https://lmusic.kz/images/album_cover/are-we-there-yet.jpeg",
+        "audioSource": "https://lmusic.kz/files/mp3s/2023-10/Rick%20Astley%20-%20Blue%20Sky.mp3"
       }
     ],
     "zivert": [
