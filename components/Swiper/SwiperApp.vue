@@ -1,10 +1,8 @@
 <template>
   <swiper
-      :slidesPerView="5"
-      :spaceBetween="30"
-      :pagination="{
-      clickable: true,
-    }"
+      :slidesPerView="4"
+      :spaceBetween="40"
+      :freeMode="true"
       :modules="modules"
       class="mySwiper"
   >
@@ -13,7 +11,7 @@
       class="cards__group__item"
     >
       <div>
-          <v-img :src="item[0].imgSource" class="cards__group__avatar"></v-img>
+          <v-img :src="(musics) ? item[0].imgSource : ''" class="cards__group__avatar"></v-img>
         <div>
           <v-card-title class="item__title">
             {{item[0].authors}}
@@ -23,7 +21,7 @@
 
           <v-card-actions>
             <v-btn
-                class="ms-2"
+                class="item__btn__play"
                 icon="mdi-play"
                 variant="text"
                 @click="musicStore.changeAlbum(item)"
@@ -49,8 +47,12 @@ import {useMusicStore} from "~/stores/store.js";
 // import required modules
 import { Pagination } from 'swiper/modules';
 import { Navigation } from 'swiper/modules';
+import { FreeMode } from 'swiper/modules';
 
 export default {
+  data: () => ({
+    isWidthOK:false
+  }),
   components: {
     Swiper,
     SwiperSlide,
@@ -62,7 +64,7 @@ export default {
     const musicStore =useMusicStore()
     return {
       musicStore,
-      modules: [Pagination,Navigation],
+      modules: [Pagination,Navigation, FreeMode],
     };
   },
 
@@ -81,13 +83,25 @@ export default {
 }
 .cards__group__item{
   background-color: rgba(149,33,117, 0.8);
-  cursor: pointer;
-  max-width: 70%;
+  cursor: grab;
 }
 .item__title{
   color: white;
 }
 .item__decr {
   color: white;
+}
+.item__btn__play{
+  background-color: white;
+  margin: 0 auto;
+  border-radius: 16%;
+}
+@media (max-width: 970px) {
+  .cards__group__avatar{
+    width: 150px;
+    margin: 10px auto;
+  }
+  .mySwiper{
+  }
 }
 </style>

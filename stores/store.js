@@ -3,7 +3,6 @@ export const useMusicStore = defineStore("musicStore",  {
     state: () => ({
         activeMusic: null,
         musicItems: {},
-        isLoading: true,
         activeAlbum: null
     }),
     getters: {
