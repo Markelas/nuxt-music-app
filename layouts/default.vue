@@ -12,10 +12,6 @@
       <li></li>
       <li></li>
       <li></li>
-      <li></li>
-      <li></li>
-
-
     </ul>
     <slot/>
   </div>
