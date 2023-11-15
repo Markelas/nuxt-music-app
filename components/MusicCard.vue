@@ -10,11 +10,13 @@
           {{musicStore.activeMusic.name}}
         </v-card-title>
 
-        <v-card-subtitle>{{musicStore.activeMusic.album}}</v-card-subtitle>
-        <v-card-subtitle>{{musicStore.activeMusic.authors}}</v-card-subtitle>
+        <v-card-subtitle>{{activeMusic.album}}</v-card-subtitle>
+        <v-card-subtitle>{{activeMusic.authors}}</v-card-subtitle>
 
         <v-card-actions>
+          <v-btn :class="{disableArrows}"><MiArrowLeft/></v-btn>
           <aduio-comp  :activeMusicSource="activeMusicSource" :key="activeMusicSource+hackHtml"/>
+          <v-btn :class="{disableArrows}"><MiArrowRight/></v-btn>
         </v-card-actions>
       </div>
 
@@ -32,8 +34,18 @@
 
 <script setup>
 import {useMusicStore} from "~/stores/store";
+import MiArrowRight from "~/components/icons/ArrowRight.vue";
+import MiArrowLeft from "~/components/icons/ArrowLeft.vue";
 
 const musicStore = useMusicStore()
+
+const disableArrows = computed(()=> {
+  console.log(activeMusic === activeMusic[0] || activeMusic === activeMusic[length-1])
+  return (activeMusic === activeMusic[0] || activeMusic === activeMusic[length-1]) ? 'disable' : ''
+})
+const activeMusic = computed(() => {
+  return musicStore.activeMusic
+})
 
 const activeMusicSource = computed(()=> {
   return (musicStore.activeMusic) ? musicStore.activeMusic.audioSource : null
