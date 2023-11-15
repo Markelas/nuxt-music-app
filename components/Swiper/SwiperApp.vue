@@ -1,7 +1,7 @@
 <template>
   <swiper
       :slidesPerView="4"
-      :spaceBetween="40"
+      :spaceBetween="20"
       :freeMode="true"
       :modules="modules"
       class="mySwiper"
