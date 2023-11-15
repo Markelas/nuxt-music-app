@@ -14,9 +14,9 @@
         <v-card-subtitle>{{activeMusic.authors}}</v-card-subtitle>
 
         <v-card-actions>
-          <v-btn :class="{disableArrows}"><MiArrowLeft/></v-btn>
+          <v-btn :class="{ disabled : disableArrowsLeft}" @click="musicStore.backTrack"><MiArrowLeft/></v-btn>
           <aduio-comp  :activeMusicSource="activeMusicSource" :key="activeMusicSource+hackHtml"/>
-          <v-btn :class="{disableArrows}"><MiArrowRight/></v-btn>
+          <v-btn :class="{disabled : disableArrowsRight}" @click="musicStore.nextTrack"><MiArrowRight/></v-btn>
         </v-card-actions>
       </div>
 
@@ -39,9 +39,13 @@ import MiArrowLeft from "~/components/icons/ArrowLeft.vue";
 
 const musicStore = useMusicStore()
 
-const disableArrows = computed(()=> {
-  console.log(activeMusic === activeMusic[0] || activeMusic === activeMusic[length-1])
-  return (activeMusic === activeMusic[0] || activeMusic === activeMusic[length-1]) ? 'disable' : ''
+const props = defineProps(['musics'])
+const musics = props.musics
+const disableArrowsLeft = computed(()=> {
+  return musicStore.activeMusic === musicStore.activeAlbum[0]
+})
+const disableArrowsRight = computed(()=> {
+  return musicStore.activeMusic === musicStore.activeAlbum[length-1]
 })
 const activeMusic = computed(() => {
   return musicStore.activeMusic
@@ -57,6 +61,11 @@ let hackHtml = ""; //Хакаем vue, чтобы компонент перер�
 </script>
 
 <style scoped>
+.disabled{
+  cursor: default;
+  color: rgba(121, 119, 119, 0.98);
+  opacity: 1;
+}
 .card__box{
   max-width: 600px;
   margin: 0 auto;
